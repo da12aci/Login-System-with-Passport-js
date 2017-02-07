@@ -1,9 +1,7 @@
 <h2 class="page-header">Register</h2>
-{{#if errors}}
-    {{#each errors}}
-        <div class="alert alert-danger">{{msg}}</div>
-    {{/each}}
-{{/if}}
+{{#if errors}} {{#each errors}}
+<div class="alert alert-danger">{{msg}}</div>
+{{/each}} {{/if}}
 <form method="POST" action="/users/register">
     <div class="form-group">
         <label>Name</label>
@@ -27,3 +25,5 @@
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
 </form>
+
+<br>
